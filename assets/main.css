@@ -1,0 +1,350 @@
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#cover {
+  background: url(../img/coverPhoto1.jpg) center center/cover;
+  height: 87vh;
+  background-repeat: no-repeat;
+}
+#cover .shade {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(25, 25, 27, 0.7);
+}
+#cover .shade .centar {
+  margin: 0px auto;
+  width: 80%;
+  font-size: 25px;
+}
+#cover .shade .centar h2 {
+  color: white;
+  padding-top: 160px;
+  font-weight: 400;
+}
+#cover .shade .centar h2 span {
+  color: #00afbf;
+  font-weight: 400;
+}
+#cover .shade .centar a {
+  color: #00afbf;
+  text-decoration: none;
+  padding: 5px 15px;
+  border: #00afbf solid 2px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: all ease-in-out 0.3s;
+}
+#cover .shade .centar a:hover {
+  color: #fff;
+  background-color: #00afbf;
+  border: #fff 2px solid;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  height: 13vh;
+  background-color: #1b242f;
+  position: sticky;
+  top: 0px;
+  z-index: 5;
+}
+header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0px auto;
+  width: 80%;
+}
+header div .logo {
+  width: 30%;
+  margin: 0px;
+}
+header div .logo h1 {
+  text-transform: capitalize;
+  font-size: 27px;
+}
+header div .logo h1 a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  transition: all ease-in-out 0.3s;
+}
+header div .logo h1 a:hover {
+  color: #00afbf;
+}
+header nav {
+  width: 55%;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+header nav ul li {
+  display: inline-block;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  transition: all ease-in-out 0.3s;
+}
+header nav ul li a:hover {
+  color: #00afbf;
+}
+
+#aboutMe {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0px auto;
+  width: 90%;
+  margin: 40px auto 80px auto;
+}
+#aboutMe #whoAmI {
+  width: 70%;
+}
+#aboutMe #whoAmI h2 {
+  margin: 0px auto;
+  width: -moz-max-content;
+  width: max-content;
+  text-align: center;
+  border-bottom: 2px solid #e31b6d;
+  padding: 0px 15px;
+  font-weight: 500;
+  font-size: 25px;
+}
+#aboutMe #whoAmI div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+#aboutMe #whoAmI div div {
+  width: 45%;
+  text-align: center;
+}
+#aboutMe #whoAmI div div ul {
+  list-style-type: none;
+}
+#aboutMe #whoAmI div div ul li {
+  font-size: 15px;
+  font-weight: 400;
+}
+#aboutMe #whoAmI div div ul .listHeader {
+  color: #00afbf;
+  font-weight: 500;
+  font-size: 22px;
+}
+#aboutMe #whoAmI div div ul .listBold {
+  font-weight: 500;
+  font-size: 18px;
+}
+#aboutMe #whoAmI div #personalInfo {
+  display: block;
+}
+#aboutMe #whoAmI div #personalInfo ul .listHeader {
+  margin-top: 23px;
+}
+#aboutMe #whoAmI div #education ul li {
+  margin-top: 10px;
+}
+#aboutMe #whoAmI div .linija {
+  margin-top: 20px;
+  width: 4px;
+  background-color: #e31b6d;
+  height: 200px;
+  border-radius: 2px;
+}
+#aboutMe #myPhoto {
+  width: 25%;
+  height: 330px;
+  background-color: #1b242f;
+  margin-top: 20px;
+  margin-right: 60px;
+}
+
+#services {
+  background-color: rgba(27, 36, 47, 0.9);
+}
+#services #servicesHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #1b242f;
+  text-align: center;
+  height: 90px;
+  margin-bottom: 60px;
+}
+#services #servicesHeader h2 {
+  margin: 0px auto;
+  color: #fff;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 15px;
+  text-transform: uppercase;
+  font-size: 25px;
+  border-bottom: 2px solid #e31b6d;
+}
+#services #servicesContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 80%;
+  margin: 0px auto;
+}
+#services #servicesContent .servicesBlock {
+  width: 30%;
+  border-radius: 15px;
+  border: 2px solid #e31b6d;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 50px;
+  transition: all ease-in-out 0.3s;
+  background-color: rgba(27, 36, 47, 0.7);
+}
+#services #servicesContent .servicesBlock i {
+  font-size: 40px;
+  padding: 20px;
+  margin: 10px;
+  background-color: #00afbf;
+  border-radius: 10px;
+  border: 2px solid #e31b6d;
+  color: #fff;
+}
+#services #servicesContent .servicesBlock h4 {
+  font-size: 20px;
+  color: #e31b6d;
+  font-weight: 500;
+}
+#services #servicesContent .servicesBlock p {
+  color: #fff;
+}
+#services #servicesContent .servicesBlock:hover {
+  scale: 1.1;
+  box-shadow: -15px 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+#skills {
+  background-color: #fff;
+}
+#skills #skillsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #1b242f;
+  height: 90px;
+}
+#skills #skillsHeader h2 {
+  margin: 0px auto;
+  font-size: 25px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 15px;
+  border-bottom: 2px solid #e31b6d;
+  color: #fff;
+  text-transform: uppercase;
+}
+#skills #skillsWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0px auto;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 80%;
+  padding-bottom: 50px;
+}
+#skills #skillsWrap .skillsBlock {
+  width: 30%;
+  text-align: center;
+  margin: 20px 0px;
+}
+#skills #skillsWrap .skillsBlock i {
+  color: #1b242f;
+  font-size: 40px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #00afbf;
+}
+#skills #skillsWrap .skillsBlock h3 {
+  color: #e31b6d;
+  font-weight: 400;
+}
+#skills #skillsWrap .html i {
+  padding: 10px 17px;
+}
+#skills #skillsWrap .css i {
+  padding: 10px 17px;
+}
+#skills #skillsWrap .js i {
+  padding: 10px 15px;
+}
+#skills #skillsWrap .sql i {
+  padding: 10px 15px;
+}
+#skills #skillsWrap .c i {
+  padding: 10px 17px;
+}
+
+#projects {
+  background-color: rgba(27, 36, 47, 0.7);
+}
+#projects #projectsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #1b242f;
+  height: 90px;
+}
+#projects #projectsHeader h2 {
+  margin: 0px auto;
+  font-size: 25px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 15px;
+  border-bottom: 2px solid #e31b6d;
+  color: #fff;
+  text-transform: uppercase;
+}
+#projects #projectsContent {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0px auto;
+  padding: 50px 0px;
+}
+#projects #projectsContent div {
+  width: 40%;
+  border-radius: 10px;
+  transition: all ease-in-out 0.3s;
+}
+#projects #projectsContent div img {
+  width: 100%;
+  border-radius: 10px;
+}
+#projects #projectsContent div:hover {
+  scale: 1.1;
+  box-shadow: 10px 10px 5px #333;
+}/*# sourceMappingURL=main.css.map */

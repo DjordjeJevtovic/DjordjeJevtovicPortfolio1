@@ -1,0 +1,371 @@
+
+/////////mixins////////
+@mixin mainFont{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+@mixin flexBox($pozicioniranje: space-between, $redosled: row){
+    display: flex;
+    align-items: center;
+    justify-content: $pozicioniranje;
+    flex-direction: $redosled;
+}
+@mixin header{
+    background-color: $primary;
+    height: 90px;
+
+    h2{
+        @include sredina;
+        font-size: 25px;
+        width: max-content;
+        padding: 0px 15px;
+        border-bottom: 2px solid $details;
+        color: $bela;
+        text-transform: uppercase;
+    }
+}
+@mixin sredina{
+    margin: 0px auto;
+}
+
+
+////////variable//////// 
+$primary: #1b242f;
+$secoundary: #00afbf;
+$details: #e31b6d;
+$bela: #fff;
+$shade: #19191b;
+
+
+///////KOD////////////
+*{
+    @include mainFont;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+//////////COVER/////////////
+#cover{
+    background: url(../img/coverPhoto1.jpg) center center / cover;
+    height: 87vh;
+    background-repeat: no-repeat;
+
+    .shade{
+        height: 100%;
+        width: 100%;
+        background-color: rgba($color: $shade, $alpha: 0.7);
+
+        .centar{
+            @include sredina;
+            width: 80%;
+            font-size: 25px;
+
+            h2{
+                color: white;
+                padding-top: 160px;
+                font-weight: 400;
+
+                span{
+                    color: $secoundary;
+                    font-weight: 400;
+                }
+            }
+            a{
+                color: $secoundary;
+                text-decoration: none;
+                padding: 5px 15px;
+                border: $secoundary solid 2px;
+                display: inline-block;
+                margin-top: 10px;
+                transition: all ease-in-out 0.3s;
+            }
+            a:hover{
+                color: $bela;
+                background-color: $secoundary;
+                border: $bela 2px solid;
+            }
+        }
+
+    }
+
+}
+
+
+//////////HEADER///////////////
+header{
+    @include flexBox(space-around, row-reverse);
+    height: 13vh;
+    background-color: $primary;
+    position: sticky;
+    top: 0px;
+    z-index: 5;
+    
+    div{
+        @include flexBox (space-between, row);
+        @include sredina;        
+        width: 80%;
+
+        .logo{
+            width:30%;
+            margin: 0px;
+
+
+            h1{
+                text-transform: capitalize;
+                font-size: 27px;
+                a{
+                    text-decoration: none;
+                    color: $bela;
+                    font-weight: 300;
+                    text-transform: uppercase;
+                    transition: all ease-in-out 0.3s;
+                }
+
+                a:hover{
+                    color: $secoundary;
+                }
+                  
+            }
+              
+        }
+    }
+    nav{
+        width: 55%;
+
+
+        ul{
+            @include flexBox (space-between, row);
+
+
+            li{
+                display: inline-block;
+
+                a{
+                    color: $bela;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    transition: all ease-in-out 0.3s;
+                }
+                a:hover{
+                    color: $secoundary;
+                }
+            }
+        }
+    }
+}
+
+
+////////// MAIN BODY ////////////
+#aboutMe{
+    @include flexBox (space-between, row);
+    @include sredina;
+    width: 90%;
+    margin: 40px auto 80px auto;
+    
+    #whoAmI{
+        width: 70%;
+
+        h2{
+            @include sredina;
+            width: max-content;
+            text-align: center;
+            border-bottom: 2px solid $details;
+            padding: 0px 15px;
+            font-weight: 500;
+            font-size: 25px;
+        }
+        div{
+            @include flexBox (space-around, row);
+
+            div{
+                width: 45%;
+                text-align: center;
+                ul{
+                    list-style-type: none;
+                    
+
+                    li{
+                        font-size: 15px;
+                        font-weight: 400;
+                    }
+                    .listHeader{
+                        color: $secoundary;
+                        font-weight: 500;
+                        font-size: 22px;
+                    }
+                    .listBold{
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                }
+            }
+            #personalInfo{
+                display: block;
+                ul{
+                    .listHeader{
+                        margin-top: 23px;
+                    }
+                }
+            }
+            #education{
+                ul{
+                    li{
+                        margin-top: 10px;
+                    }
+                }
+            }
+            .linija{
+                margin-top: 20px;
+                width: 4px;
+                background-color: $details;
+                height: 200px;
+                border-radius: 2px;
+            }
+        }
+    }
+    #myPhoto{
+        width: 25%;
+        height: 330px;
+        background-color: $primary;
+        margin-top: 20px;
+        margin-right: 60px;
+    }
+}
+#services{
+    background-color: rgba($color: $primary, $alpha: 0.9);
+    #servicesHeader{
+        @include flexBox;
+        background-color: $primary;
+        text-align: center;
+        height: 90px;
+        margin-bottom: 60px;
+
+        h2{
+            @include sredina;
+            color: $bela;
+            width: max-content;
+            padding: 0px 15px;
+            text-transform: uppercase;
+            font-size: 25px;
+            border-bottom: 2px solid #e31b6d;
+        }
+    }
+    #servicesContent{
+        @include flexBox;
+        width: 80%;
+        margin: 0px auto;
+        
+        .servicesBlock{
+            width: 30%;
+            border-radius: 15px;
+            border: 2px solid $details;
+            text-align: center;
+            padding: 20px;
+            margin-bottom: 50px;
+            transition: all ease-in-out 0.3s;
+            background-color: rgba($color: $primary, $alpha: 0.7);
+
+            i{
+                font-size: 40px;
+                padding: 20px;
+                margin: 10px;
+                background-color: $secoundary;
+                border-radius: 10px;
+                border: 2px solid $details;
+                color: $bela;
+            }
+            h4{
+                font-size: 20px;
+                color: $details;
+                font-weight: 500;
+            }
+            p{
+                color: $bela;
+            }        
+        }
+        .servicesBlock:hover{
+            scale: 1.1;
+            box-shadow: -15px 15px 5px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+#skills{
+    background-color: $bela;
+
+    
+    #skillsHeader{
+        @include flexBox;
+        @include header;
+    }
+    #skillsWrap{
+        @include flexBox;
+        @include sredina;
+        flex-wrap: wrap;
+        margin-top: 50px;
+        width: 80%;
+        padding-bottom: 50px;
+
+        .skillsBlock{
+            width: 30%;
+            text-align: center;
+            margin: 20px 0px;
+
+            i{
+                color: $primary;
+                font-size: 40px;
+                padding: 10px;
+                border-radius: 10px;
+                background-color: $secoundary;
+            }
+            h3{
+                color: $details;
+                font-weight: 400;
+            }
+        }
+        .html{
+            i{padding: 10px 17px;}
+        }
+        .css{
+            i{padding: 10px 17px;}
+        }
+        .js{
+            i{padding: 10px 15px;}
+        }
+        .sql{
+            i{padding: 10px 15px;}
+        }
+        .c{
+            i{padding: 10px 17px;}
+        }
+    }
+}
+#projects{
+    background-color: rgba($color: $primary, $alpha: 0.7);
+    #projectsHeader{
+        @include flexBox;
+        @include header;
+    }
+    #projectsContent{
+        width: 80%;
+        @include flexBox;
+        @include sredina;
+        padding: 50px 0px;
+
+
+        div{
+            width: 40%;
+            border-radius: 10px;
+            transition: all ease-in-out 0.3s;
+            img{
+                width: 100%;
+                border-radius: 10px;
+            }
+        }
+        div:hover{
+            scale: 1.1;
+            box-shadow: 10px 10px 5px #333;
+        }
+    }
+}
