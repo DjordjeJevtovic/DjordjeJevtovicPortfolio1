@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>Djordje Jevtovic - Portfolio</title>
+    <title>Đorđe Jevtović - Portfolio</title>
 </head>
 <body>
     <div id="cover">
@@ -30,14 +30,14 @@
                     I'm <span>Đorđe Jevtović.</span> <br>
                     I'm Full stack programmer.
                 </h2>
-                <a href="#">View my Projects!</a>
+                <a href="#projects">View my Projects!</a>
             </div>
         </div>
     </div>
     <header>
         <div>
             <div class="logo">
-                <h1><a href="#">Đorđe Jevtovic</a></h1>
+                <h1><a href="#">Đorđe Jevtović</a></h1>
             </div>
             <nav>
                 <ul>
@@ -87,7 +87,9 @@
                     </div>
                 </div>
             </div>
-            <div id="myPhoto"></div>
+            <div id="myPhoto">
+                <img src="img/moja-slika.jpg" alt="Photo of the author">
+            </div>
         </div>
         <!----------------- KRAJ ABOUT ME-------------------->
         <!-----------------SERVICES-------------------->
@@ -96,17 +98,17 @@
                 <h2>Services</h2>
             </div>
             <div id="servicesContent">
-                <div class="servicesBlock">
+                <div class="servicesBlock programming">
                     <i class="fa-solid fa-code"></i>
                     <h4>Programming</h4>
                     <p>Making Web sites, databases and app algorithms.</p>
                 </div>
-                <div class="servicesBlock">
+                <div class="servicesBlock design">
                     <i class="fa-solid fa-crop"></i>
                     <h4>Design</h4>
                     <p>Designing high quality characters, objects and environments.</p>
                 </div>
-                <div class="servicesBlock">
+                <div class="servicesBlock debugging">
                     <i class="fa-solid fa-gear"></i>
                     <h4>Debugging</h4>
                     <p>Fixing bugs and optimizing code for better software preformance.</p>
@@ -161,15 +163,65 @@
             </div>
             <div id="projectsContent">
                 <div>
+                    <p>Royal inn hotel <span>(HTML/CSS)</span></p>
                     <a target="_blank" href="https://djrodjejevtovic12123.000webhostapp.com/"><img src="img/sajt1.jpg" alt="First project - hotel"></a>
                 </div>
                 <div>
+                    <p>Portfolio site <span>(HTML/SASS)</span></p>
                     <a href="#"><img src="img/sajt2.jpg" alt="Secound project - Portfolio site"></a>
                 </div>
             </div>
         </div>
         <!---------------- PROJECTS --------------->
+
+        <!---------------- CONTACT --------------->
+        <div id="contact">
+            <div id="contactHeader"><h2>Contacnt</h2></div>
+            <div id="contactContent">
+                <div id="contactInfo">
+                    <div class="contactBlock">
+                        <div class="contactLevo">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="contactDesno">
+                            <p>djordje.jevtovic.121.23@ict.edu.rs</p>
+                        </div>
+                    </div>
+                    <div class="contactBlock">
+                        <div class="contactLevo">
+                            <i class="fa-solid fa-address-book"></i>
+                        </div>
+                        <div class="contactDesno">
+                            <p>+381600720975</p>
+                        </div>
+                    </div>
+                    <div class="contactBlock">
+                        <div class="contactLevo">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div class="contactDesno">
+                            <p>Zdravka Celara 16, Belgrade</p>
+                        </div>
+                    </div>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://twitter.com/"><i class="fa-brands fa-square-x-twitter"></i></a>
+                        <a href="https://rs.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div id="contactMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.3588588816006!2d20.481839876238784!3d44.814253371070734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7a9609031735%3A0xc17ed71f59ac4725!2z0JLQuNGB0L7QutCwIElDVCDRiNC60L7Qu9Cw!5e0!3m2!1ssr!2srs!4v1709136362791!5m2!1ssr!2srs" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+        <!---------------- CONTACT --------------->
     </main>
-    <footer></footer>
+    <footer>
+        <div id="footerWrap">
+            <a target="_blank" href="assets/main.scss"><i class="fa-brands fa-sass"></i></a>
+            <p>Copyright &copy; <span>Đorđe Jevtović</span></p>
+            <a target="_blank" href="sitemap.xml"><i class="fa-solid fa-sitemap"></i></a>
+        </div>
+    </footer>
 </body>
 </html>

@@ -57,13 +57,14 @@ $shade: #19191b;
         background-color: rgba($color: $shade, $alpha: 0.7);
 
         .centar{
+            @include flexBox (center, column);
             @include sredina;
+            height: 100%;
             width: 80%;
             font-size: 25px;
-
+            align-items: start;
             h2{
                 color: white;
-                padding-top: 160px;
                 font-weight: 400;
 
                 span{
@@ -161,11 +162,11 @@ header{
 #aboutMe{
     @include flexBox (space-between, row);
     @include sredina;
-    width: 90%;
-    margin: 40px auto 80px auto;
+    width: 80%;
+    margin: 60px auto 60px auto;
     
     #whoAmI{
-        width: 70%;
+        width: 65%;
 
         h2{
             @include sredina;
@@ -187,7 +188,7 @@ header{
                     
 
                     li{
-                        font-size: 15px;
+                        font-size: 17px;
                         font-weight: 400;
                     }
                     .listHeader{
@@ -197,7 +198,7 @@ header{
                     }
                     .listBold{
                         font-weight: 500;
-                        font-size: 18px;
+                        font-size: 19px;
                     }
                 }
             }
@@ -226,11 +227,20 @@ header{
         }
     }
     #myPhoto{
-        width: 25%;
+        @include flexBox;
+        width: 30%;
         height: 330px;
-        background-color: $primary;
-        margin-top: 20px;
-        margin-right: 60px;
+
+        
+        img{
+            width: 100%;
+            border-radius: 20px;
+            transition: all ease-in-out 0.3s;
+            &:hover{
+                scale: 1.1;
+                box-shadow: -10px 10px 5px #a2a2a2;
+            }
+        }
     }
 }
 #services{
@@ -291,10 +301,7 @@ header{
         }
     }
 }
-#skills{
-    background-color: $bela;
-
-    
+#skills{        
     #skillsHeader{
         @include flexBox;
         @include header;
@@ -353,19 +360,123 @@ header{
         @include sredina;
         padding: 50px 0px;
 
-
+        
         div{
             width: 40%;
             border-radius: 10px;
-            transition: all ease-in-out 0.3s;
+            
+            p{
+                text-align: center;
+                font-weight: 300;
+                margin-bottom: 10px;
+                color: $bela;
+                span{
+                    color: $secoundary;
+                }
+            }
             img{
                 width: 100%;
                 border-radius: 10px;
+                transition: all ease-in-out 0.3s;
+            }
+            img:hover{
+                scale: 1.1;
+                box-shadow: 10px 10px 5px #333;
             }
         }
-        div:hover{
-            scale: 1.1;
-            box-shadow: 10px 10px 5px #333;
+        
+    }
+}
+#contact{
+    #contactHeader{
+        @include flexBox;
+        @include header;
+    }
+    #contactContent{
+        padding: 50px 0px;
+        width: 80%;
+        @include flexBox;
+        @include sredina;
+
+        #contactMap{
+            width: 45%;
+            iframe{
+                width: 100%;
+                height: 350px;
+            }
         }
+        #contactInfo{
+            width: 45%;
+            .contactBlock{
+                display: flex;
+                margin: 10px 0px;
+                box-shadow: -5px 5px 5px #818080;
+                border-right: 3px solid $secoundary;
+                transition: all ease-in-out 0.3s;
+
+                .contactLevo{
+                    padding: 30px;
+                    background-color: $secoundary;
+
+                    i{
+                        color: white;
+                        font-size: 25px;
+                    }
+                }
+                .contactDesno{
+                    @include flexBox;
+                    padding: 10px;
+                }
+                
+            }
+            .contactBlock:hover{
+                scale: 1.05;
+            }
+            .socials{
+                a{  
+                    color: $secoundary;
+                    display: inline-block;
+                    padding: 5px;
+                    transition: all ease-in-out 0.3s;
+                    i{
+                        font-size: 45px;
+                    }
+
+                }
+                a:hover{
+                    color: $primary;
+                    background-color: $secoundary;
+                    border-radius: 7px;
+                }
+            }
+        }
+    }
+}
+footer{
+    @include flexBox;
+    background-color: $primary;
+    height: 10vh;
+    color: $bela;
+
+    #footerWrap{
+        @include flexBox;
+        @include sredina;
+        width: 80%;
+        p{
+            font-size: 20px;
+            font-weight: 100;
+            span{
+                color: $secoundary;
+            }
+        }
+        a{
+            transition: all ease-in-out 0.3s;
+            color: $bela;
+            font-size: 30px;
+        }
+        a:hover{
+            color: $secoundary;
+        }
+        
     }
 }

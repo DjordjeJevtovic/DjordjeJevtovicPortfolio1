@@ -18,13 +18,18 @@
   background-color: rgba(25, 25, 27, 0.7);
 }
 #cover .shade .centar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 0px auto;
+  height: 100%;
   width: 80%;
   font-size: 25px;
+  align-items: start;
 }
 #cover .shade .centar h2 {
   color: white;
-  padding-top: 160px;
   font-weight: 400;
 }
 #cover .shade .centar h2 span {
@@ -112,11 +117,11 @@ header nav ul li a:hover {
   justify-content: space-between;
   flex-direction: row;
   margin: 0px auto;
-  width: 90%;
-  margin: 40px auto 80px auto;
+  width: 80%;
+  margin: 60px auto 60px auto;
 }
 #aboutMe #whoAmI {
-  width: 70%;
+  width: 65%;
 }
 #aboutMe #whoAmI h2 {
   margin: 0px auto;
@@ -142,7 +147,7 @@ header nav ul li a:hover {
   list-style-type: none;
 }
 #aboutMe #whoAmI div div ul li {
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 400;
 }
 #aboutMe #whoAmI div div ul .listHeader {
@@ -152,7 +157,7 @@ header nav ul li a:hover {
 }
 #aboutMe #whoAmI div div ul .listBold {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 19px;
 }
 #aboutMe #whoAmI div #personalInfo {
   display: block;
@@ -171,11 +176,21 @@ header nav ul li a:hover {
   border-radius: 2px;
 }
 #aboutMe #myPhoto {
-  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 30%;
   height: 330px;
-  background-color: #1b242f;
-  margin-top: 20px;
-  margin-right: 60px;
+}
+#aboutMe #myPhoto img {
+  width: 100%;
+  border-radius: 20px;
+  transition: all ease-in-out 0.3s;
+}
+#aboutMe #myPhoto img:hover {
+  scale: 1.1;
+  box-shadow: -10px 10px 5px #a2a2a2;
 }
 
 #services {
@@ -241,9 +256,6 @@ header nav ul li a:hover {
   box-shadow: -15px 15px 5px rgba(0, 0, 0, 0.2);
 }
 
-#skills {
-  background-color: #fff;
-}
 #skills #skillsHeader {
   display: flex;
   align-items: center;
@@ -338,13 +350,132 @@ header nav ul li a:hover {
 #projects #projectsContent div {
   width: 40%;
   border-radius: 10px;
-  transition: all ease-in-out 0.3s;
+}
+#projects #projectsContent div p {
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: #fff;
+}
+#projects #projectsContent div p span {
+  color: #00afbf;
 }
 #projects #projectsContent div img {
   width: 100%;
   border-radius: 10px;
+  transition: all ease-in-out 0.3s;
 }
-#projects #projectsContent div:hover {
+#projects #projectsContent div img:hover {
   scale: 1.1;
   box-shadow: 10px 10px 5px #333;
+}
+
+#contact #contactHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #1b242f;
+  height: 90px;
+}
+#contact #contactHeader h2 {
+  margin: 0px auto;
+  font-size: 25px;
+  width: -moz-max-content;
+  width: max-content;
+  padding: 0px 15px;
+  border-bottom: 2px solid #e31b6d;
+  color: #fff;
+  text-transform: uppercase;
+}
+#contact #contactContent {
+  padding: 50px 0px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0px auto;
+}
+#contact #contactContent #contactMap {
+  width: 45%;
+}
+#contact #contactContent #contactMap iframe {
+  width: 100%;
+  height: 350px;
+}
+#contact #contactContent #contactInfo {
+  width: 45%;
+}
+#contact #contactContent #contactInfo .contactBlock {
+  display: flex;
+  margin: 10px 0px;
+  box-shadow: -5px 5px 5px #818080;
+  border-right: 3px solid #00afbf;
+  transition: all ease-in-out 0.3s;
+}
+#contact #contactContent #contactInfo .contactBlock .contactLevo {
+  padding: 30px;
+  background-color: #00afbf;
+}
+#contact #contactContent #contactInfo .contactBlock .contactLevo i {
+  color: white;
+  font-size: 25px;
+}
+#contact #contactContent #contactInfo .contactBlock .contactDesno {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px;
+}
+#contact #contactContent #contactInfo .contactBlock:hover {
+  scale: 1.05;
+}
+#contact #contactContent #contactInfo .socials a {
+  color: #00afbf;
+  display: inline-block;
+  padding: 5px;
+  transition: all ease-in-out 0.3s;
+}
+#contact #contactContent #contactInfo .socials a i {
+  font-size: 45px;
+}
+#contact #contactContent #contactInfo .socials a:hover {
+  color: #1b242f;
+  background-color: #00afbf;
+  border-radius: 7px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #1b242f;
+  height: 10vh;
+  color: #fff;
+}
+footer #footerWrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 0px auto;
+  width: 80%;
+}
+footer #footerWrap p {
+  font-size: 20px;
+  font-weight: 100;
+}
+footer #footerWrap p span {
+  color: #00afbf;
+}
+footer #footerWrap a {
+  transition: all ease-in-out 0.3s;
+  color: #fff;
+  font-size: 30px;
+}
+footer #footerWrap a:hover {
+  color: #00afbf;
 }/*# sourceMappingURL=main.css.map */

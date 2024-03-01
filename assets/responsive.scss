@@ -1,0 +1,534 @@
+////////variable//////// 
+$primary: #1b242f;
+$secoundary: #00afbf;
+$details: #e31b6d;
+$bela: #fff;
+$shade: #19191b;
+
+@media (max-width: 1055px) {
+    #aboutMe{
+        flex-direction: column;
+        margin-top: 20px;
+        #whoAmI{
+            width: 100%;
+        }
+        #myPhoto{
+            width: 40%;
+            height: 390px;
+        }
+    }
+    #services{
+        #servicesContent{
+            .design, .programming{
+                padding: 30px 20px;
+            }
+        }
+    }
+    #skills{
+        #skillsWrap{
+            .css{
+                padding-bottom: 30px;
+            }
+            .bs{
+                padding-bottom: 30px;
+            }
+            .js{
+                padding-bottom: 25px;
+            }
+            .c{
+                padding-bottom: 25px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1020px){
+    #skills{
+        #skillsWrap{
+            .css{
+                padding-bottom: 0px;
+            }
+        }
+    }
+    #contact{
+        #contactContent{
+            #contactInfo{
+                .contactBlock{
+                    .contactLevo{
+                        padding: 30px 20px;
+                    }
+                }
+            }
+        }
+    }
+    #projects{
+        #projectsContent{
+            flex-direction: column;
+            div{
+                width: 80%;
+                p{
+                    font-size: 25px;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1013px){
+    #cover{
+        .shade{
+            .centar{
+                h2{
+                    font-size: 30px;
+                }
+                a{
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+    header{
+        div{
+            .logo{
+                h1{
+                    font-size: 24px;
+                }
+            }
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #skills{
+        #skillsWrap{
+            .c{
+                padding-bottom: 45px;
+            }
+            .sql{
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 931px){
+    #services{
+        #servicesHeader{
+            height: 80px;
+            h2{
+                font-size: 22px;
+            }
+        }
+        #servicesContent{
+            .design{
+                padding: 30px 20px;
+            }
+            .servicesBlock{
+                i{
+                    font-size: 30px;
+                }
+                h4{
+                    font-size: 18px;
+                }
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    #skills{
+        #skillsHeader{
+            height: 80px;
+            h2{
+                font-size: 22px;
+            }
+        }
+        #skillsWrap{
+            .css{
+                padding-bottom: 27px;
+            }
+            .skillsBlock{
+                i{
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+    #projects{
+        #projectsHeader{
+            height: 80px;
+            h2{
+                font-size: 22px;
+            }
+        }
+    }
+    #contact{
+        #contactHeader{
+            height: 80px;
+            h2{
+                font-size: 22px;
+            }
+        }
+        #contactContent{
+            #contactMap{
+                iframe{
+                    height:300px;
+                }
+            }
+            #contactInfo{
+                .contactBlock{
+                    .contactLevo{
+                        padding: 23px 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        #footerWrap{
+            p{
+                font-size: 17px;
+            }
+            a{
+                font-size: 25px;
+            }
+        }
+    }
+    #servicesHeader, #skillsHeader, #projectsHeader, #contactHeader{
+        height: 80px;
+        h2{
+            font-size: 22px;
+        }
+    }
+    
+}
+
+@media (max-width: 886px){
+    #services{
+        #servicesContent{
+            .design{
+                padding: 20px 20px;
+            }
+        }
+    }
+    #skills{
+        #skillsWrap{
+            .skillsBlock{
+                padding: 0px;
+                i{
+                    margin-bottom: 10px;
+                }
+                h3{
+                    font-weight: 500;
+                }
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+    #contact{
+        #contactContent{
+            #contactInfo{
+                .contactBlock{
+                    flex-direction: column;
+                    border-bottom: 3px solid $secoundary;
+                    border-right: 0px;
+                    .contactLevo{
+                        padding: 3px 0px;
+                        text-align: center;
+                    }
+                    .contactDesno{
+                        padding: 7px;
+                    }
+                }
+            }
+        }
+    }
+    #projects{
+        #projectsContent{
+            div{
+                p{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 840px){
+    header{
+        div{
+            .logo{
+                h1{
+                    a{
+                        font-size: 20px;
+                    }
+                }
+            }
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #aboutMe{
+        #whoAmI{
+            h2{
+                font-size: 20px;
+            }
+            div{
+                #personalInfo, #education{
+                    ul{
+                        li{
+                            font-size: 15px;
+                        }
+                        .listHeader{
+                            font-size: 18px;
+                        }
+                        .listBold{
+                            font-size: 17px;
+                        }
+                    }
+                }
+                .linija{
+                    width: 3px;
+                }
+            }
+        }
+    }
+    #cover{
+        .shade{
+            .centar{
+                h2{
+                    font-size: 25px;
+                }
+                a{
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+@media (max-width:800px){
+    #services{
+        #servicesContent{
+            padding-bottom: 50px;
+            flex-wrap: wrap;
+            .servicesBlock{
+                width: 45%;
+            }
+            .debugging{
+                margin: 0px auto;
+            }
+        }
+    }
+    #contact{
+        #contactContent{
+            flex-direction: column-reverse;
+            #contactInfo{
+                width: 80%;
+                .contactBlock{
+                    flex-direction: row;
+                    border-right: 2px solid $secoundary;
+                    border-bottom: 0px;
+                    .contactLevo{
+                        padding: 30px 30px;
+                    }
+                }
+            }
+            #contactMap{
+                width: 80%;
+            }
+        }
+    }
+}
+@media (max-width:738px){
+    #aboutMe{
+        #myPhoto{
+            width: 50%;
+        }
+    }
+    #services{
+        #servicesContent{
+            .servicesBlock{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width:704px){
+    header{
+        div{
+            flex-direction: column;
+            .logo{
+                width: 100%;
+                padding-bottom: 5px;
+            }
+            nav{
+                width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 595px){
+    #aboutMe{
+        #whoAmI{
+            div{
+                flex-direction: column;
+                #personalInfo, #education{
+                    width: 60%;
+                }
+                .linija{                       
+                    height:3px;
+                    width: 60%;
+                }
+            }
+        }
+        #myPhoto{
+            width: 60%;
+        }
+    }
+    #skills{
+        #skillsWrap{
+            flex-wrap: wrap;
+            .skillsBlock{
+                width: 45%;
+            }
+        }
+    }
+    #contact{
+        #contactContent{
+            #contactInfo{
+                .contactBlock{
+                    flex-direction: column;
+                    border-bottom: 2px solid $secoundary;
+                    border-right: 0px;
+                    .contactLevo{
+                        padding: 5px 0px;
+                    }
+                }
+            }
+        }
+    }
+    #services{
+        #servicesContent{
+            .servicesBlock{
+                i{
+                    font-size: 23px;
+                    padding: 15px;
+                }
+                h4{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+    #projects{
+        #projectsContent{
+            div{
+                p{
+                    font-size: 17px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 440px){
+    #cover{
+        .shade{
+            .centar{
+                h2{
+                    font-size: 20px;
+                }
+                a{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    #aboutMe{
+        #myPhoto{
+            width: 80%;
+        }
+    }
+    #projects{
+        #projectsContent{
+            div{
+                p{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    #contact{
+        #contactContent{
+            #contactInfo{
+                .contactBlock{
+                    .contactDesno{
+                        p{
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        #footerWrap{
+            a{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media (max-width:390px){
+    header{
+        div{
+            .logo{
+                h1{
+                    a{
+                        font-size: 17px;
+                    }
+                }
+            }
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #aboutMe{
+        #myPhoto{
+            width: 90%;
+        }
+        #whoAmI{
+            div{
+                #personalInfo, #education{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
